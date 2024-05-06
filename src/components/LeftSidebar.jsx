@@ -1,6 +1,5 @@
 /* eslint-disable react/jsx-key */
 import React from "react";
-
 import { GrHomeRounded } from "react-icons/gr";
 import { PiBooks } from "react-icons/pi";
 import { TbBook } from "react-icons/tb";
@@ -26,9 +25,11 @@ const LeftSidebar = () => {
           <Link
             href={"/"}
             key={index}
-            className="text-[25px] p-4 rounded-lg hover:bg-[#f8f6f9] bg-white"
+            className="text-[25px] p-4 rounded-lg bg-white hover:bg-[#f8f6f9]"
           >
-            {Icon}
+            <span className="hover:text-customGreen transition-all duration-300 ">
+              {Icon}
+            </span>
           </Link>
         ))}
       </div>
