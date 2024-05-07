@@ -1,9 +1,23 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { hadisData } from "../../../Data";
 import book from "../../../public/book2.png";
 import Image from "next/image";
+import img1 from "../../../public/copy.png";
+import img2 from "../../../public/bookmark.png";
+import img3 from "../../../public/direct.png";
+import img4 from "../../../public/share.png";
 const Hadis = () => {
+  const [hoveredImg, setHoveredImg] = useState(null);
+
+  const handleMouseEnter = (img) => {
+    setHoveredImg(img);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredImg(null);
+  };
+
   return (
     <div>
       {hadisData.map((hadis, index) => (
@@ -63,16 +77,72 @@ const Hadis = () => {
                 {hadis.Banglahadis}
               </p>
               <div className="hidden lg:block mt-8">
-                <div className="flex items-center gap-2 mt-4">
-                  <div className="style-Kalpurush-webKit dark:text-hadith-deepoffwhite text-base leading-[18.15px]">
-                    হাদিসের মান :
+                <div className="flex justify-between items-center">
+                  <div className="flex items-center gap-2 mt-4">
+                    <div className="style-Kalpurush-webKit dark:text-hadith-deepoffwhite text-base leading-[18.15px]">
+                      হাদিসের মান :
+                    </div>
+                    <button
+                      className="pt-1.5 pb-1 rounded-[.3rem] style-Kalpurush-dropdown text-white px-3 flex items-center justify-center font-medium text-sm"
+                      style={{ backgroundColor: "rgb(70, 184, 145)" }}
+                    >
+                      <p>{hadis.HadiserMan}</p>
+                    </button>
                   </div>
-                  <button
-                    className="pt-1.5 pb-1 rounded-[.3rem] style-Kalpurush-dropdown text-white px-3 flex items-center justify-center font-medium text-sm"
-                    style={{ backgroundColor: "rgb(70, 184, 145)" }}
-                  >
-                    <p>{hadis.HadiserMan}</p>
-                  </button>
+                  <div className="flex gap-10 cursor-pointer">
+                    <div className="relative">
+                      <Image
+                        src={img1}
+                        alt="image"
+                        onMouseEnter={() => handleMouseEnter("img1")}
+                        onMouseLeave={handleMouseLeave}
+                      />
+                      {hoveredImg === "img1" && (
+                        <div className="absolute bg-gray-800 text-white px-2 py-1 rounded-md top-0 left-1/2 transform -translate-x-1/2">
+                          copy
+                        </div>
+                      )}
+                    </div>
+                    <div className="relative">
+                      <Image
+                        src={img2}
+                        alt="image"
+                        onMouseEnter={() => handleMouseEnter("img2")}
+                        onMouseLeave={handleMouseLeave}
+                      />
+                      {hoveredImg === "img2" && (
+                        <div className="absolute bg-gray-800 text-white px-2 py-1 rounded-md top-0 left-1/2 transform -translate-x-1/2">
+                          copy
+                        </div>
+                      )}
+                    </div>
+                    <div className="relative">
+                      <Image
+                        src={img3}
+                        alt="image"
+                        onMouseEnter={() => handleMouseEnter("img3")}
+                        onMouseLeave={handleMouseLeave}
+                      />
+                      {hoveredImg === "img3" && (
+                        <div className="absolute bg-gray-800 text-white px-2 py-1 rounded-md top-0 left-1/2 transform -translate-x-1/2">
+                          copy
+                        </div>
+                      )}
+                    </div>
+                    <div className="relative">
+                      <Image
+                        src={img4}
+                        alt="image"
+                        onMouseEnter={() => handleMouseEnter("img4")}
+                        onMouseLeave={handleMouseLeave}
+                      />
+                      {hoveredImg === "img4" && (
+                        <div className="absolute bg-gray-800 text-white px-2 py-1 rounded-md top-0 left-1/2 transform -translate-x-1/2">
+                          copy
+                        </div>
+                      )}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
