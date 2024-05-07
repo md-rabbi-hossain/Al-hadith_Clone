@@ -76,7 +76,7 @@ const Hadis = () => {
               <p className="style-Kalpurush-primary text-primary  leading-[1.8] xss:text-[15px] xss:leading-7">
                 {hadis.Banglahadis}
               </p>
-              <div className="hidden lg:block mt-8">
+              <div className="hidden lg:block mt-8 mb-2">
                 <div className="flex justify-between items-center">
                   <div className="flex items-center gap-2 mt-4">
                     <div className="style-Kalpurush-webKit dark:text-hadith-deepoffwhite text-base leading-[18.15px]">
@@ -89,7 +89,7 @@ const Hadis = () => {
                       <p>{hadis.HadiserMan}</p>
                     </button>
                   </div>
-                  <div className="flex gap-10 cursor-pointer">
+                  <div className="flex gap-10 ">
                     <div className="relative">
                       <Image
                         src={img1}

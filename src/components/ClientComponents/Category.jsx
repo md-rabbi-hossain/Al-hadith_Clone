@@ -9,20 +9,24 @@ const Category = () => {
     setColor(!color);
   };
 
-  console.log(color);
-
   return (
-    <div className="border-b-[1px] lg-max:border-y-[1px] lg-max:dark:border-y-[1px] w-full flex items-center justify-center text-lg text-white border-[#ECEEF0] dark:border-dark-cat-border">
+    <div
+      className={`border-b-[1px] lg-max:border-y-[1px] lg-max:dark:border-y-[1px] w-full flex items-center justify-center text-lg  border-[#ECEEF0] dark:border-dark-cat-border ${
+        color ? "bg-white text-black" : " bg-customGreen"
+      }`}
+    >
+      {" "}
       <p
-        className="w-1/2 text-center text-black py-3 cursor-pointer rounded-tl-2xl text-xl"
         onClick={handleClick}
+        className="w-1/2 text-center py-3 cursor-pointer rounded-tl-2xl text-xl"
       >
         বই
       </p>
       <p
-        className="bg-customGreen
-         text-xl  w-1/2 text-center py-3 cursor-pointer rounded-tr-xl"
         onClick={handleClick}
+        className={`text-xl w-1/2 text-center py-3 cursor-pointer rounded-tr-xl ${
+          color ? "bg-customGreen text-white" : "bg-white"
+        }`}
       >
         অধ্যায়
       </p>
