@@ -19,8 +19,8 @@ const iconComponents = [
 
 const LeftSidebar = () => {
   return (
-    <div>
-      <div className="bg-white cursor-pointer px-5 md:py-3 lg:py-4 lg:max-w-[96px] sm:w-full md:w-full lg:h-full lg:static  flex flex-col justify-around items-center lg:gap-7 md:gap-16 sm:flex-row md:flex-row lg:flex-col absolute  sm:bottom-0  md:bottom-0 x:drop-shadow-[0_10px_20px_rgba(0,0,0,0.3)]">
+    <div className="lg:fixed left-[18px] mt-7 justify-center items-center">
+      <div className="bg-white cursor-pointer px-5 md:py-3 lg:py-4 lg:max-w-[90px] xs:w-full sm:w-full md:w-full lg:h-full flex flex-col justify-around items-center lg:gap-7 md:gap-16 xs:flex-row sm:flex-row md:flex-row lg:flex-col md:absolute md:bottom-0 x:drop-shadow-[0_10px_20px_rgba(0,0,0,0.3)]">
         {iconComponents.map((Icon, index) => (
           <Link
             href={"/"}

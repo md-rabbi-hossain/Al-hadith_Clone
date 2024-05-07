@@ -3,7 +3,7 @@ import logimg from "../../public/home-logo.png";
 
 const Navbar = () => {
   return (
-    <div className=" flex items-center justify-between w-full h-20 px-5 bg-white">
+    <div className=" flex items-center z-10 fixed left-0 top-0 justify-between w-full h-20 px-5 bg-white md:fixed md:z-10 md:top-0 md:left-0 md-max:right-0 ">
       <div className="flex items-center cursor-pointer">
         <div className="w-11 lg-min:w-fit">
           <Image
