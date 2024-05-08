@@ -6,7 +6,7 @@ import { ChapterData } from "../../../Data";
 
 export const Bookcard = () => {
   return (
-    <div className=" col-span-1 lg:col-span-1 xl:col-span-1 xs:hidden sm:hidden md:hidden xl:block xl:w-[350px] lg:w-full">
+    <div className="col-span-1 lg:col-span-1 xl:col-span-1 xs:hidden sm:hidden md:hidden xl:block xl:w-[350px] lg:w-full">
       <div className="rounded-2xl h-[calc(100vh_-_115px)] bg-white flex items-center flex-col lg:w-[350px] xl:w-[350px]">
         <Category />
         <div className="w-full h-[50px]">
@@ -33,9 +33,9 @@ export const Bookcard = () => {
           {ChapterData.map((item, index) => (
             <div
               key={index}
-              className={`p-4 mb-10 mt-4 flex cursor-pointer bg-white hover:bg-[#ebfcf6] justify-between items-center rounded-2xl h-[6.25rem] ${
-                index === 0 ? "bg-customGreen " : "bg-white"
-              }`}
+              className={`p-4 mb-10 mt-4 flex cursor-pointer hover:bg-[#ebfcf6] ${
+                index === 0 ? "bg-[#ebfcf6]" : " bg-white"
+              } justify-between items-center rounded-2xl h-[6.25rem]`}
             >
               <div className="flex items-center gap-4">
                 <div className="h-12 w-12 sm-max:w-10 xl:w-10 flex items-center justify-center relative">
@@ -44,7 +44,7 @@ export const Bookcard = () => {
                   </h3>
                 </div>
                 <div className="flex flex-col justify-between gap-1.5">
-                  <h4 className="text-black  style-Kalpurush max-line-2">
+                  <h4 className="text-black style-Kalpurush max-line-2">
                     {item.name}
                   </h4>
                   <div className="text-[#40404099] dark:text-dark-text-subtitle text-sm leading-[26px] md:text-[13px]">

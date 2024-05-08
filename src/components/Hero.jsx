@@ -21,7 +21,7 @@ const Hero = () => {
   sm:col-start-1 sm-max:pt-[5rem] sm:pb-7
   md:col-start-1 md:pb-6 
   lg:grid-cols-1 
-  xl:grid-cols-[350px,1fr] 2xl-min:grid-cols-[350px,1fr,335px] "
+  xl:grid-cols-[350px,1fr] 2xl-min:grid-cols-[350px,1fr,335px]"
           >
             <Bookcard />
             <div

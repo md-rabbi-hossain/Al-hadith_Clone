@@ -24,7 +24,7 @@ const Category = () => {
       </p>
       <p
         onClick={handleClick}
-        className={`text-xl w-1/2 text-center py-3 cursor-pointer rounded-tr-xl ${
+        className={`text-xl w-1/2 text-center py-3 cursor-pointer  ${
           color ? "bg-customGreen text-white" : "bg-white"
         }`}
       >
