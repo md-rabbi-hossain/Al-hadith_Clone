@@ -6,6 +6,7 @@ import { TbBook } from "react-icons/tb";
 import { CiBookmark } from "react-icons/ci";
 import { HiArrowsExpand } from "react-icons/hi";
 import { BiSolidDonateHeart } from "react-icons/bi";
+import imgbook from "../../public/bread-crumb-book.png";
 import Link from "next/link";
 
 const iconComponents = [
@@ -24,9 +25,19 @@ const LeftSidebar = () => {
         <Link
           href={"/"}
           key={index}
-          className="text-[25px] p-4 rounded-lg bg-white hover:bg-[#f8f6f9]"
+          className={`text-[25px] p-4 rounded-lg hover:bg-[#f8f8f9] ${
+            index === 1 || index === 5
+              ? "bg-customGreen text-white hover:bg-customGreen"
+              : "bg-white"
+          } ${index === 5 ? "lg:block md:hidden sm:hidden xs:hidden" : ""}`}
         >
-          <span className="hover:text-customGreen transition-all duration-300 ">
+          <span
+            className={`transition-all duration-300  ${
+              index === 1 || index === 5
+                ? "hover:text-white hover:bg-customGreen"
+                : "hover:text-customGreen"
+            }`}
+          >
             {Icon}
           </span>
         </Link>
