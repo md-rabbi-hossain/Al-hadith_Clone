@@ -3,8 +3,8 @@ import LeftSidebar from "./LeftSidebar";
 import { Bookcard } from "./Bookcard";
 import Togglesidebar from "./ClientComponents/Togglesidebar";
 import { Breadcrump } from "./Breadcrump";
-import HadisCard from "./ClientComponents/HadisStatic";
-import HadisStatic from "./ClientComponents/HadisStatic";
+import HadisCard from "./HadisStatic";
+import HadisStatic from "./HadisStatic";
 import Hadis from "./ClientComponents/Hadis";
 const Hero = () => {
   return (

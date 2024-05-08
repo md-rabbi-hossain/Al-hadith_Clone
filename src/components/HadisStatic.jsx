@@ -1,6 +1,6 @@
 import React from "react";
-import { Chaptar } from "../ReusableComponent/Chaptar";
-import { HadisOne } from "../ReusableComponent/HadisOne";
+import { Chaptar } from "./ReusableComponent/Chaptar";
+import { HadisOne } from "./ReusableComponent/HadisOne";
 const HadisStatic = () => {
   return (
     <div>
