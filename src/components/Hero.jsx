@@ -8,13 +8,23 @@ import HadisStatic from "./ClientComponents/HadisStatic";
 import Hadis from "./ClientComponents/Hadis";
 const Hero = () => {
   return (
-    <div className="">
-      <div className="justify-between lg:flex mt-20 sm:flex md:flex">
-        <LeftSidebar />
-        <div className="w-full h-full p-4  bg-custombg rounded-tl-3xl ml-32 overflow-auto">
-          <div className="grid grid-cols-1 xl:grid-cols-[350px,1fr] 2xl:grid-cols-[350px,1fr,335px] gap-4 xl:gap-6">
+    <div className="w-full h-full calctest flex justify-between">
+      <div className="xs:max-w-full  sm:max-w-full md:max-w-full  md:rounded-none  fixed right-0 left-24 md:h-full lg:h-full items-center bg-custombg justify-center xl:rounded-tl-3xl">
+        <div
+          id="Screentop"
+          className="lg:px-5 md:px-3 md:pb-20 lg:pb-24 md:overflow-y-auto md:h-screen"
+        >
+          <div
+            className="grid gap-4 xl-min:gap-6 py-5
+  xss:pt-24 xss:pb-9
+  xs:pb-6
+  sm:col-start-1 sm-max:pt-[5rem] sm:pb-7
+  md:col-start-1 md:pb-6 
+  lg:grid-cols-1 
+  xl:grid-cols-[350px,1fr] 2xl-min:grid-cols-[350px,1fr,335px] "
+          >
             <Bookcard />
-            <div className="col-span-1 xl:col-span-1 2xl:col-span-2 xs:col-span-3 sm:col-span-3 md:col-span-3 lg:col-span-3 lg:w-full xl:w-full sm:pb-24 lg:pb-12 :">
+            <div className="xs:col-span-3 sm:col-span-3 md:col-span-1 lg:col-span-1 lg:w-[101%] xl:min-w-[101.5%] sm:pb-24 lg:pb-12 overflow-scroll 3xl:w-full lg:h-[calc(100vh_-_80px)]">
               <Togglesidebar />
               <Breadcrump />
               <HadisStatic />
@@ -23,6 +33,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <LeftSidebar />
     </div>
   );
 };

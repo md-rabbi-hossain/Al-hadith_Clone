@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { Bookcard } from "./Bookcard";
 const Togglesidebar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const toggleSidebar = () => {
@@ -25,9 +26,7 @@ const Togglesidebar = () => {
       </div>
       {isSidebarOpen && (
         <div className="fixed top-0 left-0 h-full w-full bg-black bg-opacity-50 z-50">
-          {/* Sidebar Content Goes Here */}
           <div className="flex flex-col h-full w-64 bg-white dark:bg-dark-bg">
-            {/* Close Button */}
             <div className="p-2">
               <button
                 onClick={closeSidebar}
@@ -49,8 +48,8 @@ const Togglesidebar = () => {
                 </svg>
               </button>
             </div>
-            {/* Your sidebar content */}
           </div>
+          <Bookcard />
         </div>
       )}
     </div>
