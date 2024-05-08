@@ -12,7 +12,7 @@ const Navbar = () => {
             alt="logo"
           />
         </div>
-        <div className="ml-6 lg:block sm:hidden md:hidden">
+        <div className="ml-6 lg:block xs:hidden sm:hidden md:hidden">
           <h3 className="text-xl font-bold text-black">হাদিস সমূহ</h3>
           <h6 className="text-sm text-[#404040]">হাদিস পড়ুন শিখুন এবং জানুন</h6>
         </div>
@@ -23,15 +23,15 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-end md:flex md:gap-4 lg:gap-20 2xl:gap-5 sm:gap-4 ">
-        <form action="" className="sm:w-fit">
+      <div className="flex sm:flex-row items-center justify-end  md:flex md:gap-4 lg:gap-20 2xl:gap-5 sm:gap-4 ">
+        <form action="" className=" xs:w-fit  sm:w-fit">
           <div
             className="relative bg-[#ECEEF0] lg:w-auto
            md:w-10 md:h-10 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg search-input"
           >
             <div className="md:block">
               <svg
-                className="fill-[#5C5C5C] dark:fill-white absolute lg-min:absolute left-4 top-[1.1rem]"
+                className="fill-[#5C5C5C] dark:fill-white absolute lg:absolute left-4 top-[1.1rem]"
                 width="15"
                 height="15"
                 viewBox="0 0 15 15"
@@ -45,7 +45,7 @@ const Navbar = () => {
               type="text"
               id="search_box"
               placeholder="Search Hadith"
-              class=" lg:block  xl:block md:hidden sm:hidden border-[#DEE1E5] d border-2  p-3 rounded-lg focus:outline-0 focus:text-black pl-10 pr-10"
+              class=" lg:block  xl:block md:hidden xs:hidden sm:hidden border-[#DEE1E5] d border-2  p-3 rounded-lg focus:outline-0 focus:text-black pl-10 pr-10"
               value=""
             />
           </div>

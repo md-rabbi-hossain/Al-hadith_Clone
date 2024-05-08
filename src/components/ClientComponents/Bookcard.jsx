@@ -6,7 +6,7 @@ import { ChapterData } from "../../../Data";
 
 export const Bookcard = () => {
   return (
-    <div className="  col-span-1 lg:col-span-1 xl:col-span-1 md:hidden xl:block xl:w-[350px] lg:w-full">
+    <div className=" col-span-1 lg:col-span-1 xl:col-span-1 xs:hidden sm:hidden md:hidden xl:block xl:w-[350px] lg:w-full">
       <div className="rounded-2xl h-[calc(100vh_-_115px)] bg-white flex items-center flex-col lg:w-[350px] xl:w-[350px]">
         <Category />
         <div className="w-full h-[50px]">
