@@ -1,8 +1,6 @@
-"use client";
-
 import React from "react";
-import Category from "./Category";
-import { ChapterData } from "../../../Data";
+import Category from "./ClientComponents/Category";
+import { ChapterData } from "../../Data";
 
 export const Bookcard = () => {
   return (

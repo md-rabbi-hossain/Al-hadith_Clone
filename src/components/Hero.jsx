@@ -1,6 +1,6 @@
 import React from "react";
 import LeftSidebar from "./LeftSidebar";
-import { Bookcard } from "./ClientComponents/Bookcard";
+import { Bookcard } from "./Bookcard";
 import Togglesidebar from "./ClientComponents/Togglesidebar";
 import { Breadcrump } from "./Breadcrump";
 import HadisCard from "./ClientComponents/HadisStatic";

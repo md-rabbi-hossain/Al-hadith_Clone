@@ -23,15 +23,15 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="flex sm:flex-row items-center justify-end  md:flex md:gap-4 lg:gap-20 2xl:gap-5 sm:gap-4 ">
+      <div className="flex sm:flex-row items-center justify-end  md:flex md:gap-4 lg:gap-20 2xl:gap-5 xs:gap-4 sm:gap-4 ">
         <form action="" className=" xs:w-fit  sm:w-fit">
           <div
             className="relative bg-[#ECEEF0] lg:w-auto
-           md:w-10 md:h-10 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg search-input"
+           md:w-10 md:h-10 sm:w-10 sm:h-10 xs:w-10 xs:h-10 flex items-center justify-center rounded-lg search-input"
           >
             <div className="md:block">
               <svg
-                className="fill-[#5C5C5C] dark:fill-white absolute lg:absolute left-4 top-[1.1rem]"
+                className="fill-[#5C5C5C] dark:fill-white absolute lg:absolute left-4 top-[11px]"
                 width="15"
                 height="15"
                 viewBox="0 0 15 15"
